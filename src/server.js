@@ -1,4 +1,5 @@
-export const url = "http://localhost:5000";
+//export const url = "http://localhost:5000";
+export const url = "https://honeyland-note-app-backend.onrender.com"
 export const studentUrl = `${url}/api/v1/student`;
 export const noteUrl = `${url}/api/v1/note`;
 export const userUrl = `${url}/api/v1/client`;
