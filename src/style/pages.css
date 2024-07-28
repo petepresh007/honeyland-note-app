@@ -1,0 +1,142 @@
+.Home {
+    margin-top: 6rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 4rem;
+}
+
+.write-up {
+    width: 45%;
+}
+
+.write-up h2 {
+    margin-bottom: 1.7rem;
+    font-size: 1.9rem;
+}
+
+.write-up h1 {
+    margin-bottom: 1.7rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.write-up p {
+    margin-bottom: 1.4rem;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
+}
+
+.home-images {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.home-images img {
+    width: 290px;
+    height: 200px;
+}
+.btn-j{
+    width: 170px;
+    height: 60px;
+}
+
+.search{
+    margin-top: 9rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4rem;
+}
+.search-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-center h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* .search-center{
+    border: 1px solid black;
+} */
+
+.search-center-content{
+    width: 80%;
+    position: relative;
+}
+
+.search-center-content input{
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+.search-icon{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 74%;
+    left: 1%;
+}
+.search-content{
+    margin-top: 2rem;
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+.general-search-disp-center{
+    border: 1px solid gray;
+    padding: .6rem;
+    width: 290px;
+}
+.general-search-disp-center h1{
+    font-size: 1.2rem;
+    margin-bottom: .7rem;
+}
+.general-search-disp-center p{
+    margin-bottom: .7rem;
+}
+.download-btn{
+    border: none;
+    outline: none;
+    padding: .6rem;
+    background: gray;
+    color: white;
+    width: 98%;
+    cursor: pointer;
+}
+.home-content{
+    margin-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.home-content h1{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.home-content-center{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+.det-cen{
+    width: 313px;
+}
+.det-cen img{
+    width: 100%;
+    height: 200px;
+}
+.det-cen p{
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}

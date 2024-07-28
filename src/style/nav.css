@@ -1,0 +1,168 @@
+header {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    color: gray;
+    padding: 2rem;
+}
+
+.bars {
+    display: none;
+}
+
+.nav-bar {
+    background: #eee;
+    padding: .9rem;
+    border-radius: 10px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    margin: .9rem;
+    color: gray;
+}
+
+.user-login {
+    background: #eee;
+    padding: .9rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-container {
+    box-shadow: 2px 2px 2px gray;
+    background-color: white;
+}
+
+.fogetpassword {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: c;
+}
+
+.forget-center,
+.reset-password-center {
+    background: white;
+    padding: 1rem;
+    width: 400px;
+}
+
+.forget-center h1 {
+    margin-bottom: 1rem;
+}
+
+.forget-center input {
+    padding: .6rem;
+    width: 70%;
+    margin-right: .4rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.forget-center button {
+    border: none;
+    outline: none;
+    padding: .7rem;
+    width: 20%;
+    background: rgb(0, 140, 255);
+    color: white;
+}
+
+.reset-password {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: c;
+}
+.reset-password-center h1{
+    margin-bottom: 1rem;
+}
+.reset-password-center input {
+    padding: .6rem;
+    width: 94.5%;
+    margin-right: .4rem;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.reset-password-center button{
+    outline: none;
+    padding: .8rem;
+    border: none;
+    width: 100%;
+    background: rgb(0, 140, 255);
+    color: white;
+}
+
+.user-create-note-t{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-create-note-center-t{
+    background: white;
+    padding: 1rem;
+    width: 450px;
+}
+.user-create-note-center-t h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.first-row{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.first-row input{
+    padding: .7rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.user-create-note-center-t input{
+    width: 94.5%;
+    padding: .7rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.user-create-note-center-t select{
+    width: 100%;
+    padding: .7rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.user-create-note-center-t button{
+    width: 100%;
+    padding: .7rem;
+    outline: none;
+    border: none;
+    background: rgb(0, 132, 255);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.file-up-avar{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img-header img{
+    width: 70px;
+    height: 70px;
+}
+.logo-img-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
