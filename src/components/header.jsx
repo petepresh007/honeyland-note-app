@@ -1,7 +1,7 @@
 import { AiOutlineBars, AiOutlineUser } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { UserContext } from "../components/context";
 import axios from "axios";
 import { studentUrl, hodUrl, userUrl } from "../server";
@@ -19,6 +19,9 @@ export const Header = () => {
         setReguser,
         admin
     } = useContext(UserContext);
+    const [showNav, setShowNav] = useState(false)
+
+    const toggleNav = () => setShowNav(prev => !prev)
 
     const logout = async () => {
         try {
@@ -58,49 +61,61 @@ export const Header = () => {
 
 
     return (
-        <div className="header-container">
+        <div className="header-container" id="header-container">
             <header>
                 <section className="logo-user-icon-bars">
                     <div className="logo-img-header">
-                        <img src="/images/note_9.jpg" alt="" />
-                        <h1>HLC NOTE</h1>
+                        <img src="/images/note_9.jpg" alt="" onClick={() => go('/')} />
+                        <h1 onClick={() => go('/')}>HLC NOTE</h1>
                     </div>
-                    <AiOutlineBars className="bars" />
+                    <div className="bars-user">
+                        <AiOutlineUser onClick={() => go("/signinstudent")} className="user-bars" />
+                        <AiOutlineBars className="bars" onClick={() => toggleNav()} />
+                    </div>
                 </section>
 
                 <section className="nav">
-                    <nav className="nav-bar">
-                        <Link>Home</Link>
-                        <Link>About</Link>
-                        <Link>Contact</Link>
+                    <nav className={`nav-bar ${showNav ? "show-nav" : ""}`}>
+                        <Link onClick={() => toggleNav()}>Home</Link>
+                        <Link onClick={() => toggleNav()}>About</Link>
+                        <Link onClick={() => toggleNav()}>Contact</Link>
                         {
                             student && (
                                 <>
-                                    <Link onClick={logout}>Logout</Link>
-                                    <Link to='/student'>Account</Link>
+                                    <Link onClick={() => {
+                                        logout()
+                                        toggleNav()
+                                    }}>Logout</Link>
+                                    <Link to='/student' onClick={() => toggleNav()}>Account</Link>
                                 </>
                             )
                         }
                         {
                             hod && (
                                 <>
-                                    <Link onClick={logoutHod}>Sign-out</Link>
-                                    <Link to='/hod'>HOD</Link>
+                                    <Link onClick={() => {
+                                        logoutHod()
+                                        toggleNav()
+                                    }}>Sign-out</Link>
+                                    <Link to='/hod' onClick={() => toggleNav()}>HOD</Link>
                                 </>
                             )
                         }
                         {
                             reguser && (
                                 <>
-                                    <Link onClick={logoutUser}>Logout</Link>
-                                    <Link to='/userdashboard'>Teacher</Link>
+                                    <Link onClick={() => {
+                                        logoutUser()
+                                        toggleNav()
+                                    }}>Logout</Link>
+                                    <Link to='/userdashboard' onClick={() => toggleNav()}>Teacher</Link>
                                 </>
                             )
                         }
                         {
                             admin && (
                                 <>
-                                    <Link to='/admin101'>Admin</Link>
+                                    <Link to='/admin101' onClick={() => toggleNav()}>Admin</Link>
                                 </>
                             )
                         }

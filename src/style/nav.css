@@ -78,9 +78,11 @@ header {
     justify-content: center;
     align-items: c;
 }
-.reset-password-center h1{
+
+.reset-password-center h1 {
     margin-bottom: 1rem;
 }
+
 .reset-password-center input {
     padding: .6rem;
     width: 94.5%;
@@ -89,7 +91,8 @@ header {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
-.reset-password-center button{
+
+.reset-password-center button {
     outline: none;
     padding: .8rem;
     border: none;
@@ -98,47 +101,53 @@ header {
     color: white;
 }
 
-.user-create-note-t{
+
+
+.user-create-note-t {
     margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.user-create-note-center-t{
+
+.user-create-note-center-t {
     background: white;
     padding: 1rem;
     width: 450px;
 }
-.user-create-note-center-t h1{
+
+.user-create-note-center-t h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.first-row{
+.first-row {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.first-row input{
+.first-row input {
     padding: .7rem;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
 
-.user-create-note-center-t input{
+.user-create-note-center-t input {
     width: 94.5%;
     padding: .7rem;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
-.user-create-note-center-t select{
+
+.user-create-note-center-t select {
     width: 100%;
     padding: .7rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
-.user-create-note-center-t button{
+
+.user-create-note-center-t button {
     width: 100%;
     padding: .7rem;
     outline: none;
@@ -148,21 +157,130 @@ header {
     cursor: pointer;
     font-size: 1rem;
 }
-.file-up-avar{
+
+.file-up-avar {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo-img-header img{
+
+.logo-img-header img {
     width: 70px;
     height: 70px;
 }
-.logo-img-header{
+
+.logo-img-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.user-bars {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    #header-container {
+        width: 100%;
+    }
+
+    header {
+        margin: 0;
+        display: block;
+    }
+
+    .bars {
+        display: block;
+        font-size: 40px;
+    }
+
+    .logo-user-icon-bars {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-bar {
+        width: 100%;
+        margin-top: .5rem;
+        background: none;
+        display: none;
+    }
+
+    .nav-bar a {
+        margin-left: 0;
+        border-bottom: 1px solid #eeeeeefc;
+    }
+
+    .user-login {
+        display: none;
+    }
+
+    .logo-img-header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-img-header h1 {
+        font-size: .9rem;
+    }
+
+    .bars-user {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .user-bars {
+        display: block;
+    }
+
+    .show-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .user-create-note-t {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .user-create-note-center-t h1 {
+        font-size: 1.2rem;
+    }
+
+    .user-create-note-center-t input {
+        width: 90%;
+    }
+
+    .fogetpassword {
+        margin-top: 9rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .forget-center input {
+        width: 60%;
+    }
+
+    .forget-center button {
+        width: 25%;
+        font-size: .8rem;
+    }
+
+    .reset-password {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .reset-password-center input{
+        width: 92%;
+    }
 }

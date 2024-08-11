@@ -142,8 +142,8 @@ export const UserDashboard = () => {
                         <div>
                             <Link onClick={() => {
                                 navigate("/");
-                                setShowHeader(true);
-                                location.reload()
+                                // setShowHeader(true);
+                                // location.reload()
                             }}>
                                 <FaHome />
                             </Link>
@@ -153,11 +153,10 @@ export const UserDashboard = () => {
                         </div>
                     </header>
                     <div className={`admin-duties ${adminDuties ? "" : "show-admin-duties"}`}>
-                        <Link onClick={() => navigate("/usercreatenote")}>
+                        <Link onClick={() => navigate("/user-create")}>
                             Create Note <FaBook />
                         </Link>
-                        <Link>Edit Acc <FaEdit /></Link>
-                        <Link>Modify Note <FaEdit /></Link>
+                        <Link onClick={() => navigate("/word-processor")}>Word-Processor</Link>
                         <Link onClick={() => logoutuser()}>logout </Link>
                     </div>
                 </div>

@@ -74,14 +74,15 @@ export const StudentDashboard = () => {
     }
 
 
+
     return (
         <div className="studentdashboard">
             <section className="header">
-                <div>
+                <div className="stu-wel-mes">
                     Welcome {student && student.username} ({student && student.studentClass} {student && student.category})
                 </div>
                 <div className="bell-sudent">
-                    <AiOutlineBell />
+                    <AiOutlineBell className="stu-bell-proper"/>
                     {
                         user.file ? (
                             <img src={`${url}/upload/${user.file}`} onClick={() => go('/studentupdate')}/>
@@ -106,7 +107,7 @@ export const StudentDashboard = () => {
                     {
                         note && note.map(data => {
                             return (
-                                <div className="det">
+                                <div className="det" key={data._id}>
                                     <p>{data.subject}</p>
                                     <p>{data.author}</p>
                                     <p>{data.topic}</p>

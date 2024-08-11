@@ -717,8 +717,9 @@ ul li {
 .show-admin-link {
     display: flex;
 }
-.title-t{
-    display:  flex;
+
+.title-t {
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -765,10 +766,12 @@ ul li {
     border: 1px solid #eee;
     padding: .5rem;
 }
-.drop-box-wrapper{
+
+.drop-box-wrapper {
     position: relative;
 }
-.drop-box{
+
+.drop-box {
     display: none;
     border: 1px solid #eee;
     padding: .5rem;
@@ -777,11 +780,13 @@ ul li {
     z-index: 1;
     background: white;
 }
-.drop-box select{
+
+.drop-box select {
     padding: .7rem;
     margin-top: .5rem;
 }
-.drop-box button{
+
+.drop-box button {
     display: block;
     padding: .4rem;
     outline: none;
@@ -791,19 +796,23 @@ ul li {
     background: rgb(0, 132, 255);
     color: white;
 }
-.show-drop-box{
+
+.show-drop-box {
     display: block;
 }
-.note-adm{
+
+.note-adm {
     margin-top: 1rem;
     margin-left: 10%;
     margin-right: 10%;
 }
-.note-adm h1{
+
+.note-adm h1 {
     margin-bottom: 1rem;
     text-align: center;
 }
-.note-adm-center select{
+
+.note-adm-center select {
     margin-bottom: 1rem;
     width: 100%;
     padding: 1rem;
@@ -811,7 +820,8 @@ ul li {
     border: none;
     font-size: 1rem;
 }
-.adm-nte-details{
+
+.adm-nte-details {
     display: flex;
     background-color: white;
     margin-bottom: .2rem;
@@ -820,17 +830,21 @@ ul li {
     justify-content: space-between;
     align-items: center;
 }
-.adm-view{
+
+.adm-view {
     color: rgb(0, 153, 255);
 }
-.adm-toggle{
+
+.adm-toggle {
     cursor: pointer;
     color: rgb(0, 153, 255);
 }
-.upload-student-center input{
+
+.upload-student-center input {
     display: none;
 }
-.upload-student-center{
+
+.upload-student-center {
     margin-top: 1rem;
     display: flex;
     margin-left: 10%;
@@ -840,17 +854,20 @@ ul li {
     border: 1px solid #eee;
     padding: .8rem;
 }
-#upload-student{
+
+#upload-student {
     /* border: 1px solid #eee; */
     padding: .6rem 1.5rem;
 }
-.student-upload{
+
+.student-upload {
     font-size: 1.5rem;
     cursor: pointer;
     /* border: 1px solid #eee;
     padding: .6rem 1.5rem; */
 }
-.text-can{
+
+.text-can {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -858,11 +875,13 @@ ul li {
     border: 1px solid #eee;
     padding: .6rem 1.5rem;
 }
-.upload-frm{
+
+.upload-frm {
     display: flex;
     align-items: center;
 }
-.upload-btn-std{
+
+.upload-btn-std {
     padding: .7rem;
     width: 120px;
     /* display: none; */
@@ -871,6 +890,7 @@ ul li {
     border: none;
     outline: none;
 }
+
 .show-upload {
     display: block;
 }
@@ -917,7 +937,7 @@ ul li {
         box-shadow: 2px 2px 2px gray;
         /* height: 50px; */
         font-size: 20px;
-        padding: .6rem;
+        padding: .5rem;
         background: white;
         margin-top: 0;
         display: block;
@@ -927,15 +947,17 @@ ul li {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 50px;
+        height: 20px;
+        font-size: 30px;
     }
 
     .admin-stuff {
-        margin-top: 7.5rem;
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 1.3rem;
+        margin-top: 1rem;
+        /* margin-left: 1%;
+        margin-right: 1%; */
+        font-size: 1.1rem;
         display: block;
+        width: 100%;
     }
 
     .name-pic {
@@ -953,11 +975,19 @@ ul li {
         border-radius: 30px;
     }
 
+    .outline-user {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
+
     .admin-duties a {
         text-decoration: none;
         display: block;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
+        color: gray;
+        border-bottom: 1px solid #eee;
     }
 
     .admin-duties {
@@ -965,7 +995,10 @@ ul li {
     }
 
     .show-admin-duties {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .admin-manage {
@@ -974,7 +1007,7 @@ ul li {
     }
 
     .wel-msg {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin-bottom: 0;
     }
 
@@ -996,7 +1029,7 @@ ul li {
 
     .user-create {
         border: 1px solid #eee;
-        padding: 1rem;
+        padding: 1.2rem;
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
@@ -1148,9 +1181,10 @@ ul li {
         outline: none;
         height: 30px;
     }
+    
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
     .dashboard-center {
         flex-direction: column;
         gap: 10px;
@@ -1208,5 +1242,47 @@ ul li {
     .All-activated-note h1,
     .all-note-not-activated h1 {
         font-size: 1.2rem;
+    }
+
+
+
+
+    .studentdashboard {
+        margin-top: 0.7rem;
+    }
+
+    .stu-wel-mes {
+        font-size: 1rem;
+    }
+
+    .stu-bell-proper {
+        display: none;
+    }
+
+    .note-student-data {
+        display: block;
+    }
+
+    .det {
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+    .user-details {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .image-and-others-center {
+        margin-top: 1rem;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        height: 170px;
+    }
+
+    .image-and-others img {
+        width: 100%;
     }
 }

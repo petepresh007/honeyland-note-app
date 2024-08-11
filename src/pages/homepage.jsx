@@ -9,6 +9,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
+
 export const Home = () => {
     const go = useNavigate()
     const [text, setText] = useState("");
@@ -61,14 +62,6 @@ export const Home = () => {
                                     )
                                 ))
                             }
-                            {/* <h2>Welcome to the Note Zone</h2>
-                            <h1>
-                                “What I love most about reading: It gives you the
-                                ability to reach higher ground.
-                            </h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat culpa praesentium ipsum tempore, quas et iste voluptatibus doloribus officiis, sit
-                            </p> */}
                         </Slider>
                     </div>
 
