@@ -156,8 +156,9 @@ export const UserDashboard = () => {
                         <Link onClick={() => navigate("/user-create")}>
                             Create Note <FaBook />
                         </Link>
-                        <Link onClick={() => navigate("/word-processor")}>Word-Processor</Link>
+                        {/* <Link onClick={() => navigate("/word-processor")}>Word-Processor</Link> */}
                         <Link onClick={() => logoutuser()}>logout </Link>
+                        <Link to='/subjectteachersnote'>{user.subject} Notes</Link>
                     </div>
                 </div>
 
@@ -197,6 +198,7 @@ export const UserDashboard = () => {
                             <Link onClick={() => navigate("/user-create")}>
                                 Create Note
                             </Link>
+                            <Link to='/subjectteachersnote'>{user.subject} Notes</Link>
                             <Link>Edit Acc </Link>
                             <Link onClick={() => navigate("/word-processor")}>Word-Processor</Link>
                             <Link onClick={() => logoutuser()}>logout </Link>

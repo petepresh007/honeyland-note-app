@@ -27,7 +27,7 @@ import {AdminSignUpStudent} from "./components/admindashboard/admincreateStudent
 import {SignUpHod} from "./components/admindashboard/admincreatehod";
 import {EditHod} from "./components/edithod";
 import {Note} from "./components/admindashboard/allnotes";
-
+import {SubNote} from "./components/subjectNotes";
 
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -152,6 +152,9 @@ function App() {
         {
           path:"/admin/allnotes",
           element: <Note/>
+        },{
+          path:"/subjectteachersnote",
+          element:<SubNote/>
         }
       ]
     }

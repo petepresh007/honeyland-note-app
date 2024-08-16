@@ -894,9 +894,39 @@ ul li {
 .show-upload {
     display: block;
 }
-
-
-
+.sub-note-teach{
+    margin: 4rem 10%;
+}
+.sub-note-teach-center{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.sub-note-teach-center-det{
+    background: white;
+    padding: 1rem;
+    width: 200px;
+    height: 150px;
+}
+.sub-note-teach-center-det p{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eee;
+    padding: .5rem;
+}
+.sub-note-teach-center-det button{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background: black;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.sub-not-tech-arr{
+    display: none;
+}
 
 /**update big screen*/
 @media screen and (max-width:700px) {
@@ -1181,7 +1211,18 @@ ul li {
         outline: none;
         height: 30px;
     }
-    
+    .sub-note-teach-center{
+        display: block;
+    }
+    .sub-note-teach-center-det{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .sub-not-tech-arr{
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
 }
 
 @media screen and (max-width:600px) {
